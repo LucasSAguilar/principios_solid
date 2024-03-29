@@ -1,2 +1,2 @@
 # solid
-Alura's course project about SOLID using TypeScript
+Organização do código para adição dos principios SOLID
