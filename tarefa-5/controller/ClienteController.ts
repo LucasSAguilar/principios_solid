@@ -1,11 +1,10 @@
 import Cliente from "../entities/Cliente";
 import InMemoryRepository from "../repositories/InMemoryRepository";
+import IClientRespository from "../repositories/interfaces/IClientRepository";
 
 export default class ClienteController {
-    repository: InMemoryRepository;
-    constructor() {
-        this.repository = new InMemoryRepository();
-    }
+   
+    constructor(private repository: IClientRespository) {}
 
     adicionaCliente(cliente: Cliente) {
         this.repository.adicionaCliente(cliente);
